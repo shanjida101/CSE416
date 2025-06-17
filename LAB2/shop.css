@@ -1,0 +1,67 @@
+#nav {
+    background-color: black;
+}
+#h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    ;
+}
+#nav {
+    display: flex;
+    align-items: inline;
+    gap: 320px;
+}
+#nav a {
+    color: white;
+    
+}
+#button{
+    background-color:yellow;
+    color: white;
+    border: none;
+
+}
+main {
+    display: flex;
+    gap: 24px; 
+    justify-content: center;
+     margin: 0;
+    padding: 0
+}
+
+.product {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: column;
+    width: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.product h2 {
+    font-size: 24px;
+    margin: 16px 0 8px;
+}
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+main {
+  margin-top: 70px; 
+  
+}
+.product:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* ✅ This is the shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
