@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      border: 2px solid black;
+      color: white;
+      width: 40px;
+      height: 40px;
+      
+     
+    }
+    .color1 {
+      background-color: blue;
+    }
+    .color2 {
+      background-color: green;
+    }
+  </style>
+</head> 
+<body>
+
+  <script>
+    let n = prompt("N");
+    let f = [];
+    for (let i = 0; i < n; i++) {
+      if (i === 0) f.push(0);
+      else if (i === 1) f.push(1);
+      else f.push(f[i - 1] + f[i - 2]);
+    }
+
+    for (let i = 0; i < f.length; i++) {
+      let div = document.createElement('div');
+      div.className = 'box ' + (i % 2 === 0 ? 'color1' : 'color2');
+      div.textContent = f[i];
+      document.body.appendChild(div);
+    }
+  </script>
+
+</body>
+</html>
